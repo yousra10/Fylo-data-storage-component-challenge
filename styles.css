@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /*primary colors*/
+  --gradient: linear-gradient(to right, #FFA399, #FF4D97);
+  /*Neutral*/
+  --clr-pale-blue: hsl(243, 100%, 93%);
+  --clr-grayish-blue: hsl(229, 7%, 55%);
+  --clr-dark-blue: hsl(228, 56%, 26%);
+  --clr-very-dark-blue: hsl(229, 57%, 11%);
+  --clr-white: white;
+  /*ff*/
+  --ff: 'Raleway', sans-serif;
+  --font-size: 14px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--ff);
+  background-position: left top, bottom right;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--clr-very-dark-blue);
+}
+
+body {
+  background-image: url('images/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 20rem;
+  list-style-type: none;
+  font-size: 0.7rem;
+  padding-left: 0;
+}
+
+.list {
+  display: table-cell;
+  /* affichage en ligne */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: baseline;
+  min-height: 100vh;
+  min-width: 100vw;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.container-1 {
+  background-color: var(--clr-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px 50px 10px 10px;
+  width: 300px;
+  height: 170px;
+  box-sizing: border-box;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-dark-blue);
+  width: 100%;
+  max-width: 450px;
+  height: 150px;
+  border-radius: 10px;
+  color: var(--clr-white);
+  position: relative;
+}
+
+.skill-box {
+  margin: 0;
+}
+
+.container-2 .skill-box {
+  width: 100%;
+}
+
+.skill-bar {
+  background-color: var(--clr-very-dark-blue);
+  height: 8px;
+  margin-top: 10px;
+  margin-right: 30px;
+  border-radius: 30px;
+}
+
+.skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 81.5%;
+  border-radius: 3px;
+  background: var(--gradient);
+}
+
+.logo,
+.icon {
+  margin-left: 30px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.document,
+.folder,
+.upload {
+  background-color: var(--clr-very-dark-blue);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.document {
+  padding: 10px;
+}
+
+.folder {
+  padding: 12px 10px;
+}
+
+.upload {
+  padding: 14px 10px;
+}
+
+.storage {
+  margin: 30px 0 0 30px;
+}
+
+.bullet {
+  position: absolute;
+  border-radius: 10px;
+  width: 130px;
+  height: 65px;
+  background-color: var(--clr-white);
+  right: 30px;
+  top: -30px;
+  z-index: 1;
+}
+
+.bullet::before {
+  content: '';
+  position: absolute;
+  right: -8.74px;
+  bottom: -10px;
+  border: 0 solid transparent;
+  border-right-width: 15px;
+  border-left-width: 15px;
+  border-bottom: 22px solid var(--clr-white);
+  transform: rotate(36deg);
+  z-index: -1;
+}
+
+.circle{
+  position:absolute;
+  right:103px;
+  bottom:57px;
+  width:7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.gb-left {
+  font-size: var(--font-size);
+  font-weight: bold;
+  color: var(--clr-very-dark-blue);
+  font-size: 2.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.little-left {
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+
+@media (max-width:672px){
+
+body{
+  background-image: url('images/bg-mobile.png');
+background-repeat: repeat-y;
+}
+
+  .container{
+    display:flex;
+    flex-direction: column;
+    background-color: var(----clr-very-dark-blue);
+  }
+
+  .container-1 ,
+  .container-2{
+    width: 100%;
+    max-width: 350px;
+  }
+
+.container-1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+
+  gap: 13rem;
+
+}
+
+.skill-bar {
+  margin-right: 35px;
+}
+
+.circle{
+  position:absolute;
+  right:85px;
+  bottom:57px;
+  width:7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: white;
+}
+.bullet {
+  position: absolute;
+  border-radius: 10px;
+  width: 130px;
+  height: 65px;
+  background-color: var(--clr-white);
+  right: 120px;
+  top: 110px;
+  z-index: 1;
+}
+
+.bullet::before {
+  content: '';
+  border: 0 solid transparent;
+}
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
