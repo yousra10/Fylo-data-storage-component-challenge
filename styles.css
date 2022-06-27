@@ -29,7 +29,6 @@ html, body {
   margin: auto;
   line-height: 1.5;
   min-height: 100vh;
-  min-width: 100vw;
   background-color: var(--clr-very-dark-blue);
 }
 
@@ -59,7 +58,6 @@ ul {
   align-items: center;
   justify-content: baseline;
   min-height: 100vh;
-  min-width: 100vw;
   gap: 2rem;
   margin-bottom: 40px;
 }
